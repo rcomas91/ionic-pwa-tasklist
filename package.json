@@ -7,6 +7,8 @@
     "ng": "ng",
     "predeploy": "ng build -c=$BUILD_CONFIG --baseHref=/ionic-pwawork/",
     "deploy": "npx gh-pages -d www",
+    "start-pwa": "ng build --prod && http-server -p 8080 -c-1 www",
+    "gh-pages": "gh-pages",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
