@@ -5,6 +5,7 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
+    "deploy": "ng build -c=$BUILD_CONFIG --baseHref=/ionic-pwawork/",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
