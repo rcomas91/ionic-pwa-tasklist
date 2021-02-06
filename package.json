@@ -6,7 +6,7 @@
   "scripts": {
     "ng": "ng",
     "predeploy": "ng build -c=$BUILD_CONFIG --baseHref=/ionic-pwawork/",
-    "deploy": "npx gh-pages -d dist/angular-pwa",
+    "deploy": "npx gh-pages -d www/MyApp",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
