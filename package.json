@@ -5,7 +5,8 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-    "deploy": "ng build -c=$BUILD_CONFIG --baseHref=/ionic-pwawork/",
+    "predeploy": "ng build -c=$BUILD_CONFIG --baseHref=/ionic-pwawork/",
+    "deploy": "npx gh-pages -d dist/angular-pwa",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
