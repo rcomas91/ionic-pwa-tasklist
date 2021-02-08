@@ -4,8 +4,11 @@
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
+   "orientation": "portrait",
+   "description": "My Fancy PWA is a dummy Angular app which demonstrates a PWA's behaviour on different platforms.",
+  
   "scope": "./",
-  "start_url": "./",
+  "start_url": "/?utm_source=a2hs",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
@@ -55,5 +58,6 @@
       "type": "image/png",
       "purpose": "maskable any"
     }
-  ]
+  ],
+    "gcm_sender_id": "103953800507"
 }
