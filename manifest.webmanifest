@@ -8,7 +8,7 @@
    "description": "My Fancy PWA is a dummy Angular app which demonstrates a PWA's behaviour on different platforms.",
   
   "scope": "./",
-  "start_url": "/?utm_source=a2hs",
+  "start_url": "./",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
