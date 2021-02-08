@@ -5,7 +5,7 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-    "predeploy": "ng build -c=$BUILD_CONFIG --baseHref='https://rcomas91.github.io/ionic-pwawork/'",
+    "predeploy": "ng build -c=$BUILD_CONFIG --baseHref 'https://rcomas91.github.io/ionic-pwawork/'",
     "deploy": "npx gh-pages -d www",
     "start": "ng serve",
     "build": "ng build",
