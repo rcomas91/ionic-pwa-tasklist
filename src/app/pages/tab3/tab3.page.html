@@ -1,17 +1,72 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar no-border color="dark">
+        <ion-title>
+            Ayuda de usuario
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" color="dark">
+    <ion-header collapse="condense">
+        <ion-toolbar>
+            <ion-title size="large">Ayuda de usuario</ion-title>
+        </ion-toolbar>
+    </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+    <ion-list>
+
+        <ion-list-header color="dark">
+            <ion-label>¿Cómo funciona?</ion-label>
+        </ion-list-header>
+        <ion-item color="dark" position="floating">
+            <p>
+
+                1- Para crear una nueva lista de tareas presione el icono<a> + </a>de la parte inferior derecha de la pantalla en la pestaña <a>Pendientes.</a>
+
+            </p>
+        </ion-item>
+        <ion-item color="dark" position="floating">
+            <p>2- Una vez haya añadido el nombre de la lista presione <a>crear.</a>
+            </p>
+
+        </ion-item>
+        <ion-item color="dark" position="floating">
+            <p>
+
+                3- Cuando la lista se crea la app lo dirige a la pantalla de tareas de esta lista.
+            </p>
+
+        </ion-item>
+        <ion-item color="dark" position="floating">
+
+            <p>
+                4- Agregue las tareas escribiendo debajo de nuevo item y presionando <a>enter </a> o pulsando en <a>Añadir</a> para guardarla.
+            </p>
+        </ion-item>
+        <ion-item color="dark" position="floating">
+
+            <p>
+                5- Edite el nombre de tareas o listas <a>delizando hacia la derecha</a> la tarea o lista seleccionada y presionando en el icono de editar .
+            </p>
+        </ion-item>
+        <ion-item color="dark" position="floating">
+
+            <p>
+                6- Borre la tarea o lista <a>delizando hacia la izquierda</a> la tarea o lista seleccionada y presionando en el icono de borrar .
+            </p>
+        </ion-item>
+        <ion-item color="dark" position="floating">
+
+            <p>
+                7- La lista pasará a terminados una vez halla completado todas las tareas que esta contiene.
+            </p>
+        </ion-item>
+
+        <ion-text position="floating" color="primary">
+            <h1> Muchas gracias por utilizar esta app de prueba.</h1>
+        </ion-text>
+
+    </ion-list>
+
+
 </ion-content>
