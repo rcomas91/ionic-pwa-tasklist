@@ -1,11 +1,11 @@
 {
-  "name": "app",
-  "short_name": "app",
+  "name": "Super Lista",
+  "short_name": "Super Lista",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
    "orientation": "portrait",
-   "description": "My Fancy PWA is a dummy Angular app which demonstrates a PWA's behaviour on different platforms.",
+   "description": "Esta aplicacion de prueba demustra el comportamiento de las aplicaciones PWA, es una simple aplicacion de listas por hacer",
   
   "scope": "./",
   "start_url": "./",
