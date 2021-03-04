@@ -10,8 +10,7 @@ import { DeseosService } from 'src/app/services/deseos.service';
   styleUrls: ['./agregar.page.scss'],
 })
 export class AgregarPage implements OnInit {
-@ViewChild(IonList) lista:IonList;
-@Input() terminada=true;
+
   lista: Lista;
   nombreItem = '';
 
