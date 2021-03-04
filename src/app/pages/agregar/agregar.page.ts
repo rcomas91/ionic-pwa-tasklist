@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { ListaItem } from 'src/app/models/lista-item.model';
 import { Lista } from 'src/app/models/lista.model';
 import { DeseosService } from 'src/app/services/deseos.service';
-
+import { AlertController, IonList } from '@ionic/angular';
 
 @Component({
   selector: 'app-agregar',
@@ -11,11 +11,12 @@ import { DeseosService } from 'src/app/services/deseos.service';
   styleUrls: ['./agregar.page.scss'],
 })
 export class AgregarPage implements OnInit {
-
+@ViewChild(IonList) lista:IonList;
+@Input() terminada=true;
   lista: Lista;
   nombreItem = '';
 
-  constructor( private deseosService: DeseosService,
+  constructor( private deseosService: DeseosService,private alertCtrl:AlertController,
                private route: ActivatedRoute ) {
 
     const listaId = this.route.snapshot.paramMap.get('listaId');
