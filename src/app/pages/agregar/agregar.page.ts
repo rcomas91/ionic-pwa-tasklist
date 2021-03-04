@@ -17,7 +17,7 @@ export class AgregarPage implements OnInit {
   nombreItem = '';
 
   constructor( private deseosService: DeseosService,private alertCtrl:AlertController,
-               private route: ActivatedRoute ) {
+               private route: ActivatedRoute, private router:Router ) {
 
     const listaId = this.route.snapshot.paramMap.get('listaId');
     this.lista = this.deseosService.obtenerLista( listaId );
@@ -27,6 +27,15 @@ export class AgregarPage implements OnInit {
   ngOnInit() {
   }
 
+  listaSeleccionada( lista: Lista ) {
+
+    if ( this.terminada ) {
+      this.router.navigateByUrl(`/tabs/tab2/agregar/${ lista.id }`);
+    } else {
+      this.router.navigateByUrl(`/tabs/tab1/agregar/${ lista.id }`);
+    }
+
+  }
   agregarItem() {
 
     if ( this.nombreItem.length === 0 ) {
