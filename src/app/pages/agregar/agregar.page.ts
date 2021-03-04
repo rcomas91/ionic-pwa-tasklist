@@ -3,7 +3,6 @@ import { ActivatedRoute } from '@angular/router';
 import { ListaItem } from 'src/app/models/lista-item.model';
 import { Lista } from 'src/app/models/lista.model';
 import { DeseosService } from 'src/app/services/deseos.service';
-import { AlertController, IonList } from '@ionic/angular';
 
 @Component({
   selector: 'app-agregar',
@@ -16,8 +15,8 @@ export class AgregarPage implements OnInit {
   lista: Lista;
   nombreItem = '';
 
-  constructor( private deseosService: DeseosService,private alertCtrl:AlertController,
-               private route: ActivatedRoute, private router:Router ) {
+  constructor( private deseosService: DeseosService,
+               private route: ActivatedRoute ) {
 
     const listaId = this.route.snapshot.paramMap.get('listaId');
     this.lista = this.deseosService.obtenerLista( listaId );
@@ -27,15 +26,6 @@ export class AgregarPage implements OnInit {
   ngOnInit() {
   }
 
-  listaSeleccionada( lista: Lista ) {
-
-    if ( this.terminada ) {
-      this.router.navigateByUrl(`/tabs/tab2/agregar/${ lista.id }`);
-    } else {
-      this.router.navigateByUrl(`/tabs/tab1/agregar/${ lista.id }`);
-    }
-
-  }
   agregarItem() {
 
     if ( this.nombreItem.length === 0 ) {
@@ -76,47 +66,6 @@ export class AgregarPage implements OnInit {
 
   }
   
-  async editarLista( lista ){
-    const alert= await this.alertCtrl.create({
-      header: 'Editar Lista',
-      inputs:[{
-        name: 'titulo',
-        type: 'text',
-        value: lista.titulo,
-        placeholder: 'Nombre de la lista'
-      }
-    ],
-      buttons: [
-        {
-        text:'Cancelar',
-        role:'cancel',
-        handler:()=>{
-          console.log('Cancelar');
-          this.lista.closeSlidingItems();
-
-        }
-      },
-        {
-          text:'Actualizar',
-          handler:(data)=>{
-            console.log(data);
-            if(data.titulo.length===0)
-  {
-    return;
-  }     
-    lista.titulo=data.titulo;
-    this.deseosService.guardarStorage();
-    this.lista.closeSlidingItems();
-  
-  
-  }
-    }
-  ]
-   
-    });
-     alert.present();
-   // this.router.navigateByUrl("/tabs/agregar");
-  }
 
 
 }
