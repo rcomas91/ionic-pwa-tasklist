@@ -42,13 +42,7 @@
         <ion-item-sliding *ngFor="let item of lista.items; let i = index" class="animated fadeInDown">
 
             
-            
-  <ion-item-options side="start">
-    <ion-item-option (click)="editarLista( lista )">
-      <ion-icon slot="icon-only" name="create"></ion-icon>
-    </ion-item-option>
-  </ion-item-options>
-            
+ 
             
             <ion-item color="dark">
                 <ion-checkbox slot="start" color="tertiary" [(ngModel)]="item.completado" (ionChange)="cambioCheck( item )"></ion-checkbox>
