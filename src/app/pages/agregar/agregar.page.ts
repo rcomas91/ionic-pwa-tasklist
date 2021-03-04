@@ -65,5 +65,48 @@ export class AgregarPage implements OnInit {
     this.deseosService.guardarStorage();
 
   }
+  
+  async editarLista( lista ){
+    const alert= await this.alertCtrl.create({
+      header: 'Editar Lista',
+      inputs:[{
+        name: 'titulo',
+        type: 'text',
+        value: lista.titulo,
+        placeholder: 'Nombre de la lista'
+      }
+    ],
+      buttons: [
+        {
+        text:'Cancelar',
+        role:'cancel',
+        handler:()=>{
+          console.log('Cancelar');
+          this.lista.closeSlidingItems();
+
+        }
+      },
+        {
+          text:'Actualizar',
+          handler:(data)=>{
+            console.log(data);
+            if(data.titulo.length===0)
+  {
+    return;
+  }     
+    lista.titulo=data.titulo;
+    this.deseosService.guardarStorage();
+    this.lista.closeSlidingItems();
+  
+  
+  }
+    }
+  ]
+   
+    });
+     alert.present();
+   // this.router.navigateByUrl("/tabs/agregar");
+  }
+
 
 }
