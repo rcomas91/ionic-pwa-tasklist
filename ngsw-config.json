@@ -11,12 +11,22 @@
           "/index.html",
           "/manifest.webmanifest",
           "/*.css",
-          "/*.js",
-          "/svg/*.svg", 
-          "/svg/concrete.svg" 
+          "/*.js"
         ]
       }
     },
+    {
+      "name": "icons",
+      "installMode": "prefetch", // Download as soon as possible, may cause big net usage
+      "updateMode": "prefetch", // Use cached version
+      "resources": {
+        "files": [
+          "/svg/*.svg", // Path or template for your icons (Fetches all of it)
+          "/svg/concrete.svg" // You may use concrete ones only
+        ]
+      }
+},
+    
     {
       "name": "assets",
       "installMode": "lazy",
