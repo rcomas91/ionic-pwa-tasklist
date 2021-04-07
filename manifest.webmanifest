@@ -6,7 +6,7 @@
   "display": "standalone",
   "orientation": "portrait",
   "description": "Esta aplicacion de prueba demustra el comportamiento de las aplicaciones PWA, es una simple aplicacion de listas por hacer",
-  "start_url": "/",
+  "start_url": "./",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
