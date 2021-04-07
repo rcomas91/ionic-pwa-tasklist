@@ -11,13 +11,11 @@
           "/index.html",
           "/manifest.webmanifest",
           "/*.css",
-          "/*.js",
-          
+          "/*.js"
         ]
       }
     },
-
-       {
+    {
       "name": "icons",
       "installMode": "prefetch", 
       "updateMode": "prefetch", 
