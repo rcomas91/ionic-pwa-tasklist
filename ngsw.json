@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1615916139939,
+  "timestamp": 1617822765133,
   "index": "https://rcomas91.github.io/ionic-pwawork/index.html",
   "assetGroups": [
     {
@@ -1605,7 +1605,7 @@
     "https://rcomas91.github.io/ionic-pwawork/index.html": "75059f2af61caeb521885a52b0b8982c633d590a",
     "https://rcomas91.github.io/ionic-pwawork/main-es2015.998f34e195c2a99d1a3a.js": "d3cceb3744d172e7eea626dee32c808eb8253f65",
     "https://rcomas91.github.io/ionic-pwawork/main-es5.998f34e195c2a99d1a3a.js": "6001c9bd1287a8b9b2acc7e6885533c57f051159",
-    "https://rcomas91.github.io/ionic-pwawork/manifest.webmanifest": "71d5a56a9feeaa3fdc38db4d3e41af75b4136088",
+    "https://rcomas91.github.io/ionic-pwawork/manifest.webmanifest": "6fd0ce33415813e878381dcbdbb4b6107af4d42d",
     "https://rcomas91.github.io/ionic-pwawork/polyfills-core-js-es2015.988989edad9762881abf.js": "a6ed21f30601ec98874ebacb03378596fda5ab71",
     "https://rcomas91.github.io/ionic-pwawork/polyfills-core-js-es5.988989edad9762881abf.js": "f714fbe54c34b23b62b7f94d20e844b377f5265d",
     "https://rcomas91.github.io/ionic-pwawork/polyfills-css-shim-es2015.17e799d8b075b21ca47e.js": "45fab6a046a3b8c26a63a76bea86179bf20d1b71",
