@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1617826502391,
+  "timestamp": 1617828086237,
   "index": "https://rcomas91.github.io/ionic-pwawork/index.html",
   "assetGroups": [
     {
@@ -139,7 +139,18 @@
         "https://rcomas91.github.io/ionic-pwawork/polyfills-es5.05f6c52f912073533556.js",
         "https://rcomas91.github.io/ionic-pwawork/runtime-es2015.c908ff1a4129331b55f9.js",
         "https://rcomas91.github.io/ionic-pwawork/runtime-es5.c908ff1a4129331b55f9.js",
-        "https://rcomas91.github.io/ionic-pwawork/styles.5899ab99158b546f502c.css",
+        "https://rcomas91.github.io/ionic-pwawork/styles.5899ab99158b546f502c.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "icons",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
         "https://rcomas91.github.io/ionic-pwawork/svg/accessibility-outline.svg",
         "https://rcomas91.github.io/ionic-pwawork/svg/accessibility-sharp.svg",
         "https://rcomas91.github.io/ionic-pwawork/svg/accessibility.svg",
