@@ -12,12 +12,22 @@
           "/manifest.webmanifest",
           "/*.css",
           "/*.js",
-           "/svg/*.svg"
+          
         ]
       }
     },
 
-      
+       {
+      "name": "icons",
+      "installMode": "prefetch", 
+      "updateMode": "prefetch", 
+      "resources": {
+        "files": [
+         "/svg/*.svg", 
+          "/svg/concrete.svg"
+        ]
+      }
+},
     
     {
       "name": "assets",
