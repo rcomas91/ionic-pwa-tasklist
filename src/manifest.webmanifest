@@ -4,11 +4,9 @@
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
-   "orientation": "portrait",
-   "description": "Esta aplicacion de prueba demustra el comportamiento de las aplicaciones PWA, es una simple aplicacion de listas por hacer",
-  
-  "scope": "./",
-  "start_url": "./",
+  "orientation": "portrait",
+  "description": "Esta aplicacion de prueba demustra el comportamiento de las aplicaciones PWA, es una simple aplicacion de listas por hacer",
+  "start_url": "/",
   "icons": [
     {
       "src": "assets/icons/icon-72x72.png",
